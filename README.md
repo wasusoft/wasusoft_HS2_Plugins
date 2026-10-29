@@ -1,17 +1,45 @@
 # wasusoft_HS2_Plugins
 
-Small BepInEx plugins for HoneySelect2. Each plugin is a separate DLL, so you can install only the ones you want.
+Small plugins for **HoneySelect2**. Free to use.
 
-[日本語の説明は下にあります](#日本語)
+**日本語の説明 → [ダウンロードと入れ方（日本語）](#日本語)**
 
-If you like these plugins, you can support development on [Patreon](https://www.patreon.com/wasusoft). All plugins stay free.
+## ⬇ Download
 
-| Plugin | What it does | Works in |
+Click a file name to download it. You can install one or both.
+
+| Download | What it does | For |
 |---|---|---|
-| [HS2_OfficialVRFix](#hs2_officialvrfix) | Makes the thumbsticks work in the official VR mode on Meta Quest + SteamVR, and adds an A/X button for the finish menu | Official VR |
-| [HS2_SpeedBoost](#hs2_speedboost) | Raises the maximum animation speed in H scenes | Normal game and official VR |
+| ⬇ **[HS2_OfficialVRFix.zip](https://github.com/wasusoft/wasusoft_HS2_Plugins/releases/latest/download/HS2_OfficialVRFix.zip)** | Makes the thumbsticks work in the official VR mode with Meta Quest, and lets you finish with the A/X button | Official VR (Meta Quest) |
+| ⬇ **[HS2_SpeedBoost.zip](https://github.com/wasusoft/wasusoft_HS2_Plugins/releases/latest/download/HS2_SpeedBoost.zip)** | Makes the fastest H scene speed faster | Everyone (normal game and VR) |
 
-## Requirements
+These links always download the newest version.
+
+> 💖 **Like these plugins?** They are free, and they stay free. If they helped you, please consider supporting me on **[Patreon](https://www.patreon.com/wasusoft)**. Supporters get new plugins **early** (from $3) and can **vote** on what I make next (from $10).
+
+## How to install (3 steps)
+
+**Before you start:** you need BepInEx. If you installed **HF Patch**, you already have it. (Check: there is a folder named `BepInEx` in the game folder.)
+
+1. **Open the game folder.** In Steam, right-click HoneySelect2 → **Manage** → **Browse local files**.
+2. **Double-click the downloaded zip** to open it. You will see a folder named `BepInEx`.
+3. **Drag the `BepInEx` folder into the game folder.** If Windows asks, choose **Replace the files**. (This only adds the plugin. Your saves and characters are not touched.)
+
+Done. Start the game. Enjoy! If it works for you, a ⭐ on this page or [Patreon](https://www.patreon.com/wasusoft) support helps a lot.
+
+> ⚠ Do not use "Extract All" with the default location. It makes an extra folder, and the plugin will not load.
+>
+> To check: the file should be at `(game folder)\BepInEx\plugins\wasusoft\HS2_OfficialVRFix.dll` (or `HS2_SpeedBoost.dll`).
+
+## How to uninstall
+
+Delete the file in `(game folder)\BepInEx\plugins\wasusoft\`.
+
+---
+
+## Details
+
+### Requirements
 
 - HoneySelect2 (tested on Libido DX, Steam version 1.2.3)
 - BepInEx 5 (included in HF Patch)
@@ -25,16 +53,9 @@ If you like these plugins, you can support development on [Patreon](https://www.
 
 Other headsets and setups may work but are not tested yet. If you try one, please tell me in [Issues](../../issues) whether it worked, and I will add it to this list.
 
-## Install
-
-1. Download the DLLs you want from the [Releases](../../releases) page.
-2. Put them in `BepInEx\plugins\wasusoft\` inside the game folder (create the folder if needed). The release zips already have this folder structure, so you can also extract them into the game folder.
-
-To uninstall, delete the DLL.
-
 Settings can be changed in-game with ConfigurationManager (F1, included in HF Patch) or in the files in `BepInEx\config\`.
 
-## HS2_OfficialVRFix
+### HS2_OfficialVRFix
 
 For the official VR mode (`HoneySelect2VR.exe`) with **Meta Quest through SteamVR** (for example Virtual Desktop or Steam Link). Tested on Quest 3 + Virtual Desktop.
 
@@ -47,7 +68,7 @@ For the official VR mode (`HoneySelect2VR.exe`) with **Meta Quest through SteamV
 
 Setting: `FinishButton` (default `true`) in `wasusoft.hs2.officialvrfix.cfg`.
 
-## HS2_SpeedBoost
+### HS2_SpeedBoost
 
 The game picks the speed between a minimum and a maximum with the mouse wheel (or the stick in VR). This plugin multiplies only the maximum, so slow speeds stay the same.
 
@@ -78,37 +99,57 @@ MIT. This project is not affiliated with the game's developer.
 
 ## 日本語
 
-HoneySelect2 用の小さな BepInEx プラグイン集です。機能ごとに別の DLL なので、欲しいものだけ入れられます。
+**HoneySelect2** 用の小さなプラグインです。無料で使えます。
 
-気に入ったら [Patreon](https://www.patreon.com/wasusoft) で応援してもらえるとうれしいです。プラグインはこれからもすべて無料です。
+### ⬇ ダウンロード
 
-| プラグイン | できること | 動く場所 |
+ファイル名をクリックするとダウンロードできます。片方だけでも、両方でも入れられます。
+
+| ダウンロード | できること | 対象 |
 |---|---|---|
-| HS2_OfficialVRFix | Meta Quest＋SteamVR で公式VRのスティックが効かない問題を直す。A／X ボタンでフィニッシュ操作 | 公式VR |
-| HS2_SpeedBoost | Hシーンの速さの上限を上げる | 通常版・公式VR |
+| ⬇ **[HS2_OfficialVRFix.zip](https://github.com/wasusoft/wasusoft_HS2_Plugins/releases/latest/download/HS2_OfficialVRFix.zip)** | 公式VRを Meta Quest で遊ぶと**スティックが効かない**問題を直す。**A／X ボタンでフィニッシュ**できる | 公式VR（Meta Quest） |
+| ⬇ **[HS2_SpeedBoost.zip](https://github.com/wasusoft/wasusoft_HS2_Plugins/releases/latest/download/HS2_SpeedBoost.zip)** | Hシーンの**一番速い速さをもっと速く**する | 全員（通常版・VR） |
 
-### 必要なもの
+このリンクは、いつでも最新版がダウンロードされます。
 
-- HoneySelect2（Libido DX、Steam版 1.2.3 で確認）
-- BepInEx 5（HF Patch に含まれています）
+> 💖 **気に入ってもらえたら** — プラグインは無料で、これからも無料です。役に立ったら **[Patreon](https://www.patreon.com/wasusoft)** で応援してもらえるとうれしいです。支援してくれた方は、新しいプラグインを**先に使え**（$3から）、次に作るものの**投票**にも参加できます（$10から）。
 
-### 確認済みの環境
+### 入れ方（3ステップ）
+
+**始める前に：** BepInEx が必要です。**HF Patch** を入れていれば、もう入っています（確認：ゲームのフォルダに `BepInEx` というフォルダがあればOK）。
+
+1. **ゲームのフォルダを開く。** Steam で HoneySelect2 を右クリック →「**管理**」→「**ローカルファイルを閲覧**」
+2. **ダウンロードした zip をダブルクリック**して開く。中に `BepInEx` というフォルダが見えます
+3. **その `BepInEx` フォルダを、ゲームのフォルダにドラッグ**する。Windows に聞かれたら「**ファイルを置き換える**」を選ぶ（プラグインが追加されるだけで、セーブやキャラは変わりません）
+
+これで完了です。ゲームを起動してください。うまく動いたら、このページの ⭐（スター）や [Patreon](https://www.patreon.com/wasusoft) での応援が大きな励みになります。
+
+> ⚠「すべて展開」をそのまま使わないでください。余計なフォルダができて、プラグインが読み込まれません。
+>
+> 確認：`（ゲームのフォルダ）\BepInEx\plugins\wasusoft\HS2_OfficialVRFix.dll`（または `HS2_SpeedBoost.dll`）があれば成功です。
+
+### 外し方
+
+`（ゲームのフォルダ）\BepInEx\plugins\wasusoft\` の中のファイルを消してください。
+
+---
+
+### くわしい説明
+
+**必要なもの**：HoneySelect2（Libido DX、Steam版 1.2.3 で確認）、BepInEx 5（HF Patch に含まれています）
+
+**確認済みの環境**
 
 | プラグイン | 確認した環境 |
 |---|---|
 | HS2_OfficialVRFix | Quest 3＋Virtual Desktop＋SteamVR |
 | HS2_SpeedBoost | 通常版、公式VR（Quest 3＋Virtual Desktop） |
 
-ほかの機種・接続方法でも動くかもしれませんが、まだ確認していません。試した方は、動いたかどうかを [Issues](../../issues) で教えてください。この表に追加します。
+ほかの機種・接続方法でも動くかもしれませんが、まだ確認していません。試した方は、動いたかどうかを [Issues](../../issues) で教えてください。
 
-### 入れ方
+設定はゲーム中の ConfigurationManager（F1。HF Patch に含まれています）か、`BepInEx\config\` のファイルで変えられます。
 
-1. [Releases](../../releases) から欲しい DLL をダウンロード
-2. ゲームのフォルダの `BepInEx\plugins\wasusoft\` に入れる（フォルダが無ければ作る）。リリースの zip はこの形になっているので、ゲームのフォルダにそのまま展開しても入ります
-
-外すときは、その DLL を消してください。設定はゲーム中の ConfigurationManager（F1。HF Patch に含まれています）か、`BepInEx\config\` のファイルで変えられます。
-
-### HS2_OfficialVRFix
+#### HS2_OfficialVRFix
 
 公式VR（`HoneySelect2VR.exe`）を **Meta Quest＋SteamVR**（Virtual Desktop、Steam Link など）で遊ぶ人向けです。Quest 3＋Virtual Desktop で確認しています。
 
@@ -118,7 +159,7 @@ HoneySelect2 用の小さな BepInEx プラグイン集です。機能ごとに�
   - **押しながらスティック上下**：種類を切り替える（押している間は速さが変わりません）
   - 設定：`wasusoft.hs2.officialvrfix.cfg` の `FinishButton`（初期値 `true`）
 
-### HS2_SpeedBoost
+#### HS2_SpeedBoost
 
 ゲームはホイール（VR ではスティック）で、最小〜最大の間の速さを決めます。このプラグインは**最大だけ**を倍にするので、遅い速さはそのままです。
 
